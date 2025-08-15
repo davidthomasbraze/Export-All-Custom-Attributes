@@ -27,8 +27,8 @@ This script fetches all custom attributes from your Braze account and outputs th
     # Your REST API key with users.track permission
     BRAZE_API_KEY="YOUR_API_KEY_HERE"
 
-    # Host portion of your REST endpoint (e.g., rest.iad-01.braze.com)
-    BRAZE_REST_API_HOST="YOUR_BRAZE_HOST_HERE"
+    # Host portion of your REST endpoint (e.g., https://rest.iad-01.braze.com)
+    BRAZE_REST_ENDPOINT="YOUR_BRAZE_REST_ENDPOINT"
 
     # Optional: Path to write the full JSON payload (defaults to None)
     # OUT_FILE="braze_attributes.json"
@@ -39,14 +39,10 @@ This script fetches all custom attributes from your Braze account and outputs th
 
 ## Usage
 
-To run the script, you need to source the environment variables from the `.env` file first.
+To run the script, execute it with `python3`. The script will automatically load the environment variables from your `.env` file.
 
 ```bash
-# Make the script executable
-chmod +x fetch_attributes.py
-
-# Run the script
-./fetch_attributes.py
+python3 fetch_attributes.py
 ```
 
 The script will print the JSON output to the console. If you set the `OUT_FILE` variable in your `.env` file, it will also save the output to that file. Similarly, if you set `CSV_FILE`, a CSV version will be written to the specified path.
