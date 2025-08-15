@@ -2,6 +2,8 @@
 
 This script fetches all custom attributes from your Braze account and outputs them as a JSON array. This can optionally be saved as JSON file and CSV.
 
+This script utilizes Braze's `/custom_attributes/list` endpoint. For more details on the API, please refer to the official [Braze documentation](https://www.braze.com/docs/api/endpoints/export/custom_attributes/get_custom_attributes).
+
 ## Requirements
 
 - Python 3
