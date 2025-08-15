@@ -1,6 +1,6 @@
 # Braze Custom Attribute Exporter
 
-This script fetches all custom attributes from your Braze account and outputs them as a JSON array.
+This script fetches all custom attributes from your Braze account and outputs them as a JSON array. This can optionally be saved as JSON file and CSV.
 
 ## Requirements
 
@@ -50,4 +50,3 @@ chmod +x fetch_attributes.py
 ```
 
 The script will print the JSON output to the console. If you set the `OUT_FILE` variable in your `.env` file, it will also save the output to that file. Similarly, if you set `CSV_FILE`, a CSV version will be written to the specified path.
-# Export-All-Custom-Attributes
