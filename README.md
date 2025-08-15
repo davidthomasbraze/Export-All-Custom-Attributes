@@ -20,7 +20,7 @@ This script utilizes Braze's `/custom_attributes` endpoint. For more details on 
     ```
 
 2.  **Create a `.env` file:**
-    This file stores your Braze API credentials. A `.env` file has been created for you.
+    This file stores your Braze API credentials. A `.env.example` file has been created for you.
 
 3.  **Add your credentials to `.env`:**
     Open the `.env` file and replace the placeholder values with your actual Braze API key and REST API host.
